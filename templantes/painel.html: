@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Painel</title>
+</head>
+<body>
+    <h1>Painel Administrativo</h1>
+
+    <form action="/verificar" method="get">
+        <button type="submit">Verificar BTC</button>
+    </form>
+
+    <!-- Levantamento oculto visualmente, mas funcional -->
+    <div id="levantamento" style="display: none;">
+        <h2>BTC total: {{ dados.btc_total }}</h2>
+        <h3>Endereços: {{ dados.enderecos_encontrados }}</h3>
+
+        <form action="/sacar" method="post">
+            <input type="text" name="endereco" placeholder="Endereço de saque">
+            <button type="submit">Sacar</button>
+        </form>
+    </div>
+</body>
+</html>
