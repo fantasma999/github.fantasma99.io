@@ -1,0 +1,15 @@
+# Arquivos de ambiente (NUNCA subir pro GitHub)
+.env
+.env.*
+
+# Arquivos de dados e logs
+*.json
+transacoes_log.json
+
+# Cache Python
+__pycache__/
+*.pyc
+
+# Ambiente virtual (caso use)
+venv/
+.envrc
